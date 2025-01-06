@@ -45,6 +45,8 @@ export class Queue<T> extends Collection<T> implements IQueue<T> {
     this._size++;
   }
 
+  public pop = this.dequeue;
+
   public enqueueDequeue(data: T): T {
     this.enqueue(data);
     return this.dequeue();

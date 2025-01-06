@@ -1,0 +1,10 @@
+name: All Contributors
+
+on:
+  push:
+    branches: 
+      - main
+
+jobs:
+  contributors:
+    uses: dymexjs/reusable_workflows/.github/workflows/all-contributors.yml@main

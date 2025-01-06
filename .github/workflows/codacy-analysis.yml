@@ -13,5 +13,3 @@ permissions: read-all
 jobs:
   codacy-security-scan-coverage-reporter:
     uses: dymexjs/reusable_workflows/.github/workflows/codacy-analysis.yml@main
-    with:
-      CODACY_API_TOKEN: ${{ secrets.CODACY_API_TOKEN }}

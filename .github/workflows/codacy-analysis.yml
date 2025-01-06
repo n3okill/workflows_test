@@ -5,8 +5,6 @@ on:
     branches:
       - main
 
-permissions: read-all
-
 jobs:
   codacy-security-scan-coverage-reporter:
     uses: dymexjs/reusable_workflows/.github/workflows/codacy-analysis.yml@main

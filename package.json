@@ -1,0 +1,49 @@
+{
+  "name": "@dymexjs/collections",
+  "version": "0.0.1",
+  "description": "A collection of data structures for JavaScript",
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dymexjs/collections.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dymexjs/collections/issues"
+  },
+  "homepage": "https://github.com/dymexjs/collections.git#readme",
+  "scripts": {
+    "build": "npx tsc -p tsconfig.json",
+    "lint": "eslint",
+    "test": "globstar -- node --import tsx --test \"tests/**/*.test.ts\"",
+    "test:coverage": "globstar -- node --experimental-test-coverage --test-reporter=spec --test-reporter-destination=stdout --test-reporter=lcov --test-reporter-destination=lcov.info --import tsx --test \"tests/**/*.test.ts\"",
+    "test:watch": "globstar -- node --import tsx --test --watch \"tests/**/*.test.ts\"",
+    "format": "prettier --config .prettierrc \"src/**/*.ts\" \"tests/**/*.ts\" --write",
+    "prepare": "npm run build",
+    "preversion": "npm run format && npm run lint && npm test",
+    "version": "npm run build && git add -A .",
+    "postversion": "git push && git push --tags"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "@types/eslint-config-prettier": "^6.11.3",
+    "@types/eslint-plugin-security": "^3.0.0",
+    "@types/node": "^22.10.5",
+    "eslint": "^9.17.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-security": "^3.0.1",
+    "globals": "^15.14.0",
+    "globstar": "^1.0.0",
+    "prettier": "^3.4.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.19.0"
+  },
+  "author": {
+    "name": "João Parreira",
+    "email": "joaofrparreira@gmail.com"
+  },
+  "license": "MIT"
+}

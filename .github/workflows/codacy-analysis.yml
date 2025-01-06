@@ -2,11 +2,13 @@ name: Codacy Security Scan Utils
 
 on:
   push:
-    branches: 
+    branches:
       - main
   pull_request:
-    branches: 
+    branches:
       - main
+
+permissions: read-all
 
 jobs:
   codacy-security-scan-coverage-reporter:

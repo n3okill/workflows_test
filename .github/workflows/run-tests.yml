@@ -5,6 +5,8 @@ on:
     branches:
       - main
 
+permissions: read-all
+
 jobs:
   test:
     uses: dymexjs/reusable_workflows/.github/workflows/run-tests.yml@main

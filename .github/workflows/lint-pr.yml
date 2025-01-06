@@ -8,10 +8,9 @@ on:
       - edited
       - synchronize
 
-permissions: read-all
+permissions:
+  pull-requests: write
 
 jobs:
   main:
     uses: dymexjs/reusable_workflows/.github/workflows/lint-pr.yml@main
-    permissions:
-      pull-requests: write

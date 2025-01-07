@@ -9,3 +9,5 @@ jobs:
     uses: dymexjs/reusable_workflows/.github/workflows/publish-npm.yml@main
     secrets:
       npm-token: ${{ secrets.NPM_TOKEN }}
+    permissions:
+      id-token: write

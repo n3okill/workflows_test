@@ -2,7 +2,7 @@ name: Npm Publish Utils
 
 on:
   release:
-    types: [published]
+    types: [released]
 
 permissions: write-all
 

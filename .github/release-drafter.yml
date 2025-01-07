@@ -1,15 +1,15 @@
 # This release drafter follows the conventions
 # from https://keepachangelog.com
 
-name-template: 'v$RESOLVED_VERSION'
-tag-template: 'v$RESOLVED_VERSION'
+name-template: "v$RESOLVED_VERSION"
+tag-template: "v$RESOLVED_VERSION"
 template: |
   ## What's Changed 👀
   $CHANGES
 
-  **Full Changelog**: https://github.com/$OWNER/$REPOSITORY/compare/$PREVIOUS_TAG...v$RESOLVED_VERSION
+  **Full Changelog**: <https://github.com/$OWNER/$REPOSITORY/compare/$PREVIOUS_TAG...v$RESOLVED_VERSION>
 
-change-template: '- $TITLE @$AUTHOR ([#$NUMBER](https://github.com/$OWNER/$REPOSITORY/pull/$NUMBER))'
+change-template: "- $TITLE @$AUTHOR ([#$NUMBER](https://github.com/$OWNER/$REPOSITORY/pull/$NUMBER))"
 
 categories:
   - title: 🚀 Features
@@ -36,14 +36,13 @@ categories:
   - title: 📄 Documentation
     labels:
       - docs
-      - documentation      
+      - documentation
   - title: 🧩 Dependency Updates
     labels:
       - deps
       - dependencies
       - dependency
     collapse-after: 5
-
 
 change-title-escapes: '\<*_&' # You can add # and @ to disable mentions, and add ` to disable code blocks.
 version-resolver:
@@ -58,6 +57,6 @@ version-resolver:
       - patch
       - dependency
   default: patch
-  
+
 exclude-labels:
   - skip-changelog

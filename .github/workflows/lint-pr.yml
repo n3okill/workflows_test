@@ -8,11 +8,10 @@ on:
       - edited
       - synchronize
 
-permissions:
-  pull-requests: write
-
 jobs:
   main:
     uses: dymexjs/reusable_workflows/.github/workflows/lint-pr.yml@main
     secrets:
       github-token: ${{ secrets.GITHUB_TOKEN }}
+    permissions:
+      pull-requests: write

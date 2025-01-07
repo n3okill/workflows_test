@@ -2,6 +2,14 @@
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v0.0.12 - 2025-01-07
+
+### What's Changed 👀
+
+* No changes
+
+**Full Changelog**: [https://github.com/n3okill/workflows_test/compare/v0.0.11...v0.0.12](https://github.com/n3okill/workflows_test/compare/v0.0.11...v0.0.12)
+
 ## v0.0.11 - 2025-01-07
 
 ### What's Changed 👀

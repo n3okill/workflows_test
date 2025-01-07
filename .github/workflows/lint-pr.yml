@@ -8,6 +8,8 @@ on:
       - edited
       - synchronize
 
+permissions: write-all
+
 jobs:
   main:
     uses: dymexjs/reusable_workflows/.github/workflows/lint-pr.yml@main

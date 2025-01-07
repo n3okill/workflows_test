@@ -1,6 +1,6 @@
 {
   "name": "@n3okill/workflows_test",
-  "version": "v0.0.10",
+  "version": "v0.0.11",
   "description": "A collection of data structures for JavaScript",
   "publishConfig": {
     "access": "public"

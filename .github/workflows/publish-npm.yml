@@ -1,0 +1,11 @@
+name: Npm Publish Utils
+
+on:
+  push:
+    tags:
+      - v*
+jobs:
+  publish:
+    uses: dymexjs/reusable_workflows/.github/workflows/publish-npm.yml@main
+    secrets:
+      npm-token: ${{ secrets.NPM_TOKEN }}

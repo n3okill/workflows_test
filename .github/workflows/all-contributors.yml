@@ -10,3 +10,5 @@ permissions: read-all
 jobs:
   contributors:
     uses: dymexjs/reusable_workflows/.github/workflows/all-contributors.yml@main
+    secrets:
+      github-token: ${{ secrets.GITHUB_TOKEN }}

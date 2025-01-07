@@ -1,5 +1,5 @@
 {
-  "name": "@n3okill/collections",
+  "name": "@n3okill/workflows_test",
   "version": "v0.0.9",
   "description": "A collection of data structures for JavaScript",
   "publishConfig": {
@@ -8,12 +8,12 @@
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dymexjs/collections.git"
+    "url": "git+https://github.com/n3okill/workflows_test.git"
   },
   "bugs": {
-    "url": "https://github.com/dymexjs/collections/issues"
+    "url": "https://github.com/n3okill/workflows_test/issues"
   },
-  "homepage": "https://github.com/dymexjs/collections.git#readme",
+  "homepage": "https://github.com/n3okill/workflows_test.git#readme",
   "scripts": {
     "build": "npx tsc -p tsconfig.json",
     "lint": "eslint",

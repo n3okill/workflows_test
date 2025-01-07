@@ -15,3 +15,5 @@ jobs:
       # otherwise, read permission is required at least
       pull-requests: write
     uses: dymexjs/reusable_workflows/.github/workflows/release-drafter.yml@main
+    secrets:
+      github-token: ${{ secrets.GITHUB_TOKEN }}
